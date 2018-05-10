@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:minHeight="115dp"
+    android:orientation="horizontal"
+    android:focusable="false" 
+    android:clickable="false" 
+    android:descendantFocusability="blocksDescendants">
+    
+    <RelativeLayout 
+        android:layout_width="0dp"
+		android:layout_height="match_parent"
+        android:layout_weight=".30">
+        
+       	<ImageView 
+	        android:id="@+id/imageIv"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:contentDescription="@string/app_name"
+	        android:scaleType="fitXY"
+	        android:layout_gravity="center_vertical"
+	       	android:paddingLeft="3dp"
+	    	android:paddingRight="3dp"
+	    	android:paddingTop="3dp"
+	    	android:paddingBottom="3dp"/>
+        	
+    </RelativeLayout>
+               
+	<RelativeLayout
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent" 
+	    android:layout_weight=".70"
+	    android:paddingLeft="3dp"
+	    android:paddingRight="3dp"
+		android:baselineAligned="false">
+	    
+	    <TextView
+	        android:id="@+id/titleTv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/black"
+	        android:singleLine="true"
+	        android:textStyle="bold"/>
+        	    
+		<ir.noghteh.JustifiedTextView
+            xmlns:noghteh="http://noghteh.ir"	 
+            android:id="@+id/descriptionTv"           
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_above="@+id/dateTv"
+            android:layout_below="@+id/titleTv"        
+	        android:padding="2dp"/>
+		
+		<TextView 
+		    android:id="@+id/dateTv"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="bottom"
+		    android:gravity="right"
+		    android:layout_alignParentBottom="true"
+		    android:textAppearance="?android:attr/textAppearanceSmall"/>
+	    
+	</RelativeLayout>
+        
+</LinearLayout>

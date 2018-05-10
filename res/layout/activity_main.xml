@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.por.MainActivity">
+   
+	<LinearLayout
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+			        	
+		<RelativeLayout
+		    android:id="@+id/headerRl"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+	       	android:background="#1686c5">
+		        
+	        <ImageButton
+	            android:id="@+id/navBtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/ic_drawer"
+	            android:background="@android:color/transparent"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:paddingLeft="20dp"
+	            android:paddingRight="20dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"/>
+	        
+	        <TextView
+	            android:id="@+id/titleTv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:text="@string/menu1"
+	            android:textColor="@android:color/white"
+	            android:textSize="20sp"
+	            android:layout_centerHorizontal="true"
+	            android:gravity="center_horizontal"/>
+        
+        </RelativeLayout>
+       
+		<FrameLayout
+	      	android:id="@+id/containerFl"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+ 			    		        
+	</LinearLayout>
+       
+  	<RelativeLayout 
+		android:id="@+id/overlayLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/black"
+		android:alpha="0.5"/>
+       	
+	<include 
+        android:id="@+id/menuLayout"
+        layout="@layout/menu"/>
+		
+</FrameLayout>

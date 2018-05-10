@@ -1,0 +1,9 @@
+<resources>
+    
+    <dimen name="menu_icon_drawable_padding">15dp</dimen>
+    <dimen name="menu_icon_margin_left">15dp</dimen>
+    <dimen name="menu_padding_bottom">50dp</dimen>
+  	<dimen name="menu_font_size">16sp</dimen>
+  	<dimen name="contact_map_height">250dp</dimen>
+  	
+</resources>
